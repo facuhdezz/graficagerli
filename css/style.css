@@ -3,10 +3,23 @@
 .color3 { #d1284f };
 .color4 { #9e0e30 };
 .color5 { #301a1a };*/
+
+@font-face {
+    font-family: 'Raleway';
+    src: url("../fuentes/Raleway/Raleway-VariableFont_wght.ttf");
+}
+
 body{
+    margin: 0;
+}
+
+#bodyindex{
     background-image: url("../img/fondo-index.png");
     background-size: cover;
+
 }
+
+/*--- CSS CORRESPONDIENTE A INDEX.HTML ---*/
 
 .navbar{
     padding-inline: 200px;
@@ -98,4 +111,61 @@ body{
 
 .card:hover .carousel-indicators, .card:hover .carousel-arrow{
     visibility: visible;
+}
+
+
+/*--- CSS CORRESPONDIENTE A LOGIN.HTML ---*/
+
+main{
+    background-image: none;
+    background-color: white;
+}
+
+.ventana{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ventana-form, .ventana-extra{
+    width: 50%;
+    margin: 0;
+    height: 100vh;
+
+}
+
+.ventana-form{
+    background-color: #f0c69c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ventana-extra{
+    background: linear-gradient(#9e0e30, #301a1a);
+}
+
+.form{
+    width: 65%;
+    height: 75%;
+    border-radius: 20px;
+    background-color: white;
+    font-family: 'Raleway';
+}
+
+.form-title{
+    margin: 40px;
+}
+
+.form input{
+    height: 50px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+#form-login{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 40px;
 }
