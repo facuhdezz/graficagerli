@@ -52,11 +52,17 @@
     }
   }
 
-  @media (max-width: 1500px) {
+@media (max-width: 1500px) {
     .form-control{
         display: none;
     }
   }
+
+@media (max-width: 1250px) {
+    .navbar{
+        padding-inline: 40px;
+    }
+}
   
 
 .form-control:focus{
