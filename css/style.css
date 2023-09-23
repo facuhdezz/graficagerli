@@ -3,6 +3,10 @@
 .color3 { #d1284f };
 .color4 { #9e0e30 };
 .color5 { #301a1a };*/
+body{
+    background-image: url("../img/fondo-index.png");
+    background-size: cover;
+}
 
 .navbar{
     padding-inline: 200px;
@@ -53,14 +57,14 @@
   }
 
 @media (max-width: 1500px) {
-    .form-control{
-        display: none;
+    .navbar{
+        padding-inline: 40px;
     }
   }
 
 @media (max-width: 1250px) {
-    .navbar{
-        padding-inline: 40px;
+    .form-control{
+        display: none;
     }
 }
   
@@ -74,4 +78,24 @@
     text-decoration: none;
     color: #f0c69c;
     margin-left: 5px;
+}
+
+.container{
+    position: relative;
+    top: 35vw;
+    height: 1000px;
+}
+
+.card{
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    color: #f0c69c;
+}
+
+.carousel-indicators, .carousel-arrow{
+    visibility: hidden;
+}
+
+.card:hover .carousel-indicators, .card:hover .carousel-arrow{
+    visibility: visible;
 }
