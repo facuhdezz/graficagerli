@@ -97,12 +97,39 @@ body{
     position: relative;
     top: 35vw;
     height: 1000px;
+    padding-bottom: 50px;
 }
 
 .card{
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     color: #f0c69c;
+}
+
+.card-text:last-child{
+    color: #f3dbc3;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.15rem;
+}
+
+.card-title{
+    margin-bottom: 0;
+}
+
+.btn{
+    margin: 0;
+}
+
+.btn-title{
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .carousel-indicators, .carousel-arrow{

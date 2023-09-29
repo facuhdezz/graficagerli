@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Tarjetas",
+        "description": "Tarjetas personales con opciones en blanco y negro, color, frente y dorso, y diseño personalizado.",
+        "imagen": [
+            "img/tarjetas-personales.jpg",
+            "img/tarjetas-personales.jpg",
+            "img/tarjetas-personales.jpg"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Boletas",
+        "description": "Boletería comercial: libretas de contado, crédito, recibos, etc., en diferentes tamaños.",
+        "imagen": [
+            "img/tarjetas-personales.jpg",
+            "img/tarjetas-personales.jpg",
+            "img/tarjetas-personales.jpg"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Volantes",
+        "description": "Volantes a color y en blanco y negro, frente y dorso, diseño personalizado, en diferentes tamaños y tipos de papel.",
+        "imagen": [
+            "img/tarjetas-personales.jpg",
+            "img/tarjetas-personales.jpg",
+            "img/tarjetas-personales.jpg"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Adhesivos",
+        "description": "Etiquetas adhesivas en diferentes tamaños.",
+        "imagen": [
+            "img/tarjetas-personales.jpg",
+            "img/tarjetas-personales.jpg",
+            "img/tarjetas-personales.jpg"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Impresiones",
+        "description": "Impresiones en blanco y negro o a color, hasta un tamaño A3.",
+        "imagen": [
+            "img/tarjetas-personales.jpg",
+            "img/tarjetas-personales.jpg",
+            "img/tarjetas-personales.jpg"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Otros",
+        "description": "Consulte por otro tipo de trabajos.",
+        "imagen": [
+            "img/tarjetas-personales.jpg",
+            "img/tarjetas-personales.jpg",
+            "img/tarjetas-personales.jpg"
+        ]
+    }
+]
