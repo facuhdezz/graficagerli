@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfica Gerli - Impresiones de calidad</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/products_card.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img src="img/logo_nav2.png" class="navbar-img">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto align_icons">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <a href="#" class="nav-search">
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+                        </a>
+                    </form>
+                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="#">Presupuesto</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle align_icons" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span class="material-symbols-outlined icon_navbar" id="account">
+                                account_circle
+                            </span>
+                            Facundo Hernández
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Mis compras</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link align_icons" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span class="material-symbols-outlined icon_navbar" id="notification">
+                                mail
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link align_icons" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span class="material-symbols-outlined icon_navbar" id="notification">
+                                notifications
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col col-lg-3 d-lg-block d-none">
+                <h2 class="subtitulo text-center mb-3">Opciones</h2>
+                <div class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action">
+                        Tarjetas
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+                        Boletas
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action">
+                        Volantes
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action">
+                        Adhesivos
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action">
+                        Impresiones
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action">
+                        Otros
+                    </button>
+                </div>
+            </div>
+            <div class="col col-12 col-lg-9 d-block formulario-presupuesto">
+                <h2 class="titulo text-center mb-3">Presupuesto por boletas</h2>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control w-100" required placeholder="Nombre">
+                    <label for="floatingInput">Nombre *</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control w-100" required placeholder="Nombre">
+                    <label for="floatingInput">Teléfono / Celular *</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control w-100" placeholder="Nombre">
+                    <label for="floatingInput">Empresa</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control w-100" required placeholder="email">
+                    <label for="floatingInput">Email *</label>
+                </div>
+                <hr class="hrForm mb-3">
+                <p>Especifique cantidad de libretas, cada libreta contiene 50 números.</p>
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control w-100" required placeholder="cantidad">
+                    <label for="floatingInput">Cantidad *</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <select class="form-select" id="floatingSelect">
+                        <option value="chicas" selected>Chicas: 11cm x 17cm (Más usadas)</option>
+                        <option value="grandes">Grandes: 17cm x 22cm</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <label for="floatingSelect">Seleccione un tamaño</label>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control w-100" placeholder="Leave a comment here" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Datos a incorporar</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

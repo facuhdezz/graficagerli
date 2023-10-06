@@ -11,15 +11,15 @@
 
 body{
     margin: 0;
+    background-color: #301a1a;
 }
 
 #bodyindex{
     background-image: url("../img/fondo-index.png");
     background-size: cover;
-
 }
 
-/*--- CSS CORRESPONDIENTE A INDEX.HTML ---*/
+/*--- CSS GENERAL ---*/
 
 .navbar{
     padding-inline: 200px;
@@ -64,7 +64,7 @@ body{
 }
 
 @media (max-width: 1750px) {
-    .form-control{
+    .form-control-navbar{
         width: 400px;
     }
   }
@@ -76,7 +76,7 @@ body{
   }
 
 @media (max-width: 1250px) {
-    .form-control{
+    .form-control-navbar{
         display: none;
     }
 }
@@ -93,7 +93,7 @@ body{
     margin-left: 5px;
 }
 
-.container{
+.containerIndex{
     position: relative;
     top: 35vw;
     height: 1000px;
@@ -138,6 +138,24 @@ body{
 
 .card:hover .carousel-indicators, .card:hover .carousel-arrow{
     visibility: visible;
+}
+
+.subtitulo{
+    color: white;
+}
+
+.titulo{
+    color: #f0c69c;
+}
+
+.hrForm{
+    border: none;
+    height: 4px;
+    background: #f0c69c;
+}
+
+.formulario-presupuesto p{
+    color: white;
 }
 
 
