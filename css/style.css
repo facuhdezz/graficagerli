@@ -25,6 +25,8 @@ body{
     padding-inline: 200px;
     background-attachment: fixed;
     background-color: #f0c69c;
+    border-bottom: #f0c69c;
+    border-style: solid;
 }
 
 .nav-link{
@@ -59,25 +61,61 @@ body{
     align-items: center;
 }
 
-.form-control{
-    width: 600px;
+.form-control-navbar{
+    width: 30vw;
 }
-
+/* 
 @media (max-width: 1750px) {
     .form-control-navbar{
-        width: 400px;
+        width: 30vw;
+    }
+  } */
+
+@media (min-width: 992px) and (max-width: 1550px) {
+    .form-control-navbar{
+        width: 30vw;
+    }
+    .nombreUsuario{
+        display: none;
+    }
+    .nav-link{
+        margin-left: 5px;
     }
   }
 
-@media (max-width: 1500px) {
-    .navbar{
-        padding-inline: 40px;
-    }
-  }
-
+/* 
 @media (max-width: 1250px) {
     .form-control-navbar{
-        display: none;
+        width: 30vw;
+    }
+} */
+
+.nav-search{
+    text-decoration: none;
+    color: #f0c69c;
+    margin-left: 5px;
+}
+
+@media (max-width: 992px) {
+    .navbar{
+        padding-inline: 20px;
+    }
+    .navbar-nav{
+        margin-top: 20px;
+    }
+
+    .nav-link{
+        margin: 0;
+    }
+
+    .form-control-navbar{
+        width: 50vw;
+        text-align: left;
+    }
+    .nav-search{
+        position: absolute;
+        right: 27vw;
+        color: rgb(0, 0, 0);
     }
 }
   
@@ -85,12 +123,6 @@ body{
 .form-control:focus{
     border-color: #f0c69c;
     box-shadow: 0 0 0 0.2rem rgba(240, 198, 156, 0.4);
-}
-
-.nav-search{
-    text-decoration: none;
-    color: #f0c69c;
-    margin-left: 5px;
 }
 
 .containerIndex{
@@ -157,7 +189,6 @@ body{
 .formulario-presupuesto p{
     color: white;
 }
-
 
 /*--- CSS CORRESPONDIENTE A LOGIN.HTML ---*/
 
