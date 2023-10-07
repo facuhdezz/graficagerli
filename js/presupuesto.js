@@ -8,6 +8,14 @@ const todosLosElementos = [tarjetas,boletas,volantes,adhesivos,impresiones,otros
 const listGroup = document.getElementsByClassName('list-group-item');
 const lista = document.getElementById('list-group');
 const tipoDeTrabajo = document.getElementById('tipoDeTrabajo');
+const btnCollapseOptions = document.getElementById('btnCollapseOptions');
+
+btnCollapseOptions.addEventListener('click', () => {
+    lista.classList.toggle('d-none');
+    lista.addEventListener('click', () => {
+        lista.classList.add('d-none');
+    })
+});
 
 console.log(listGroup);
 function llamador(){    

@@ -91,9 +91,16 @@
     </nav>
     <div class="container mt-5">
         <div class="row">
-            <div class="col col-lg-3 d-lg-block d-none">
-                <h2 class="subtitulo text-center mb-3">Opciones</h2>
-                <div class="list-group" id="list-group">
+            <div class="col col-lg-3">
+                <h2 class="subtitulo text-center mb-3 d-lg-block d-none">Opciones</h2>
+                <p>
+                    <button class="btn btn-primary d-lg-none" type="button" data-toggle="collapse"
+                        data-target="#list-group" aria-expanded="false" aria-controls="collapseExample"
+                        id="btnCollapseOptions">
+                        Opciones
+                    </button>
+                </p>
+                <div class="list-group d-lg-block d-none" id="list-group">
                     <button type="button" class="list-group-item list-group-item-action" id="btnTarjetas">
                         Tarjetas
                     </button>
@@ -145,8 +152,8 @@
                     </div>
                     <div class="form-floating mb-3">
                         <select class="form-select" id="floatingSelect">
-                            <option value="chicas" selected>Chicas: 11cm x 17cm (Más usadas)</option>
-                            <option value="grandes">Grandes: 17cm x 22cm</option>
+                            <option value="chicas" selected>Chicas: 11 x 17 cm (Más usadas)</option>
+                            <option value="grandes">Grandes: 17 x 22 cm</option>
                             <option value="otro">Otro</option>
                         </select>
                         <label for="floatingSelect">Seleccione un tamaño</label>
@@ -158,10 +165,10 @@
                     </div>
                     <div class="mb-3">
                         <p>Inserte aqui los archivos que desee adjuntar.</p>
-                        <div class="d-flex">
-                            <input class="form-control" type="file" id="formFileMultiple" multiple style="width: 80%;">
-                            <button class="btn btn-primary" type="submit" style="width: 20%">Enviar</button>
+                        <div class="d-flex mb-2">
+                            <input class="form-control" type="file" id="formFileMultiple" multiple>
                         </div>
+                        <button class="btn btn-primary w-100 mb-4" type="submit">Enviar</button>
                     </div>
                 </div>
 
@@ -174,7 +181,9 @@
                         <input type="number" class="form-control w-100" required placeholder="cantidad">
                         <label for="floatingInput">Cantidad *</label>
                     </div>
-                    <p>Las tarjetas personales tienen un tamaño por defecto de aproximadamente 9,0cm x 5,5cm.</p>
+                    <p class="mb-0">Las tarjetas personales tienen un tamaño por defecto de aproximadamente 9,0cm x
+                        5,5cm.</p>
+                    <p>Si desea otro tamaño o tipo de tarjeta indíquelo en "Datos a incorporar".</p>
                     <div class="d-flex subtitulo mb-3">
                         <div class="form-check px-4">
                             <input class="form-check-input" type="radio" name="flexRadioColor" id="flexRadioDefault1"
@@ -202,25 +211,57 @@
                             style="height: 100px"></textarea>
                         <label for="floatingTextarea2">Datos a incorporar</label>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-2">
                         <p>Inserte aqui los archivos que desee adjuntar.</p>
                         <input class="form-control" type="file" id="formFileMultiple" multiple>
                     </div>
+                    <button class="btn btn-primary w-100 mb-4" type="submit">Enviar</button>
                 </div>
 
                 <!-- FORMULARIO DE VOLANTES -->
 
                 <div id="btnVolantesdiv" class="d-none">
                     <hr class="hrForm mb-3">
-                    <p>Especifique cantidad de tarjetas.</p>
+                    <p>Especifique cantidad de volantes.</p>
                     <div class="form-floating mb-3">
                         <input type="number" class="form-control w-100" required placeholder="cantidad">
                         <label for="floatingInput">Cantidad *</label>
                     </div>
+                    <div class="d-flex subtitulo mb-3">
+                        <div class="form-check px-4">
+                            <input class="form-check-input" type="radio" name="flexRadioColor" id="flexRadioDefault1"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Color
+                            </label>
+                        </div>
+                        <div class="form-check px-4">
+                            <input class="form-check-input" type="radio" name="flexRadioColor" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Blanco y Negro
+                            </label>
+                        </div>
+                        <div class="form-check px-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                                autocomplete="off">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Frente y Dorso
+                            </label>
+                        </div>
+                    </div>
                     <div class="form-floating mb-3">
                         <select class="form-select" id="floatingSelect">
-                            <option value="chicas" selected>Chicas: 11cm x 17cm (Más usadas)</option>
-                            <option value="grandes">Grandes: 17cm x 22cm</option>
+                            <option value="Mate" selected>Mate</option>
+                            <option value="Brillante">Brillante</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                        <label for="floatingSelect">Tipo de papel</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="floatingSelect">
+                            <option value="1/4 Oficio" selected>1/4 Oficio: 11 x 17 cm</option>
+                            <option value="A5">A5: 14,8 x 21 cm</option>
+                            <option value="A6">A6: 10,5 x 14,8 cm</option>
                             <option value="otro">Otro</option>
                         </select>
                         <label for="floatingSelect">Seleccione un tamaño</label>
@@ -230,94 +271,139 @@
                             style="height: 100px"></textarea>
                         <label for="floatingTextarea2">Datos a incorporar</label>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-2">
                         <p>Inserte aqui los archivos que desee adjuntar.</p>
                         <input class="form-control" type="file" id="formFileMultiple" multiple>
                     </div>
+                    <button class="btn btn-primary w-100 mb-4" type="submit">Enviar</button>
                 </div>
 
                 <!-- FORMULARIO DE ADHESIVOS -->
 
                 <div id="btnAdhesivosdiv" class="d-none">
                     <hr class="hrForm mb-3">
-                    <p>Especifique cantidad de tarjetas.</p>
+                    <p>Especifique cantidad de adhesivos.</p>
                     <div class="form-floating mb-3">
                         <input type="number" class="form-control w-100" required placeholder="cantidad">
                         <label for="floatingInput">Cantidad *</label>
                     </div>
-                    <div class="form-floating mb-3">
-                        <select class="form-select" id="floatingSelect">
-                            <option value="chicas" selected>Chicas: 11cm x 17cm (Más usadas)</option>
-                            <option value="grandes">Grandes: 17cm x 22cm</option>
-                            <option value="otro">Otro</option>
-                        </select>
-                        <label for="floatingSelect">Seleccione un tamaño</label>
+                    <div class="d-flex subtitulo mb-3">
+                        <div class="form-check px-4">
+                            <input class="form-check-input" type="radio" name="flexRadioColor" id="flexRadioDefault1"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Color
+                            </label>
+                        </div>
+                        <div class="form-check px-4">
+                            <input class="form-check-input" type="radio" name="flexRadioColor" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Blanco y Negro
+                            </label>
+                        </div>
                     </div>
                     <div class="form-floating mb-3">
                         <textarea class="form-control w-100" placeholder="Leave a comment here"
                             style="height: 100px"></textarea>
                         <label for="floatingTextarea2">Datos a incorporar</label>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-2">
                         <p>Inserte aqui los archivos que desee adjuntar.</p>
                         <input class="form-control" type="file" id="formFileMultiple" multiple>
                     </div>
+                    <button class="btn btn-primary w-100 mb-4" type="submit">Enviar</button>
                 </div>
 
                 <!-- FORMULARIO DE IMPRESIONES -->
 
                 <div id="btnImpresionesdiv" class="d-none">
                     <hr class="hrForm mb-3">
-                    <p>Especifique cantidad de tarjetas.</p>
+                    <p>Especifique cantidad de impresiones.</p>
                     <div class="form-floating mb-3">
                         <input type="number" class="form-control w-100" required placeholder="cantidad">
                         <label for="floatingInput">Cantidad *</label>
                     </div>
+                    <div class="d-flex subtitulo mb-3">
+                        <div class="form-check px-4">
+                            <input class="form-check-input" type="radio" name="flexRadioColor" id="flexRadioDefault1"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Color
+                            </label>
+                        </div>
+                        <div class="form-check px-4">
+                            <input class="form-check-input" type="radio" name="flexRadioColor" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Blanco y Negro
+                            </label>
+                        </div>
+                        <div class="form-check px-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                                autocomplete="off">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Frente y Dorso
+                            </label>
+                        </div>
+                    </div>
                     <div class="form-floating mb-3">
                         <select class="form-select" id="floatingSelect">
-                            <option value="chicas" selected>Chicas: 11cm x 17cm (Más usadas)</option>
-                            <option value="grandes">Grandes: 17cm x 22cm</option>
+                            <option value="Mate" selected>Mate</option>
+                            <option value="Brillante">Brillante</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                        <label for="floatingSelect">Tipo de papel</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="floatingSelect">
+                            <option value="A4" selected>A4: 29,7cm x 21cm</option>
+                            <option value="A3">A3: 42cm x 29,7cm</option>
                             <option value="otro">Otro</option>
                         </select>
                         <label for="floatingSelect">Seleccione un tamaño</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="floatingSelect">
+                            <option value="Normal" selected>Normal</option>
+                            <option value="Mediano">Mediano</option>
+                            <option value="Grueso">Grueso</option>
+                        </select>
+                        <label for="floatingSelect">Seleccione un gramaje</label>
                     </div>
                     <div class="form-floating mb-3">
                         <textarea class="form-control w-100" placeholder="Leave a comment here"
                             style="height: 100px"></textarea>
                         <label for="floatingTextarea2">Datos a incorporar</label>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-2">
                         <p>Inserte aqui los archivos que desee adjuntar.</p>
                         <input class="form-control" type="file" id="formFileMultiple" multiple>
                     </div>
+                    <button class="btn btn-primary w-100 mb-4" type="submit">Enviar</button>
                 </div>
 
                 <!-- FORMULARIO DE OTROS -->
 
                 <div id="btnOtrosdiv" class="d-none">
                     <hr class="hrForm mb-3">
-                    <p>Especifique cantidad de tarjetas.</p>
+                    <p>Especifique cantidad.</p>
                     <div class="form-floating mb-3">
                         <input type="number" class="form-control w-100" required placeholder="cantidad">
                         <label for="floatingInput">Cantidad *</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <select class="form-select" id="floatingSelect">
-                            <option value="chicas" selected>Chicas: 11cm x 17cm (Más usadas)</option>
-                            <option value="grandes">Grandes: 17cm x 22cm</option>
-                            <option value="otro">Otro</option>
-                        </select>
-                        <label for="floatingSelect">Seleccione un tamaño</label>
+                        <input type="text" class="form-control w-100" placeholder="Tamaño">
+                        <label for="floatingInput">Tamaño (especifique unidad de medida)</label>
                     </div>
                     <div class="form-floating mb-3">
                         <textarea class="form-control w-100" placeholder="Leave a comment here"
                             style="height: 100px"></textarea>
                         <label for="floatingTextarea2">Datos a incorporar</label>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-2">
                         <p>Inserte aqui los archivos que desee adjuntar.</p>
                         <input class="form-control" type="file" id="formFileMultiple" multiple>
                     </div>
+                    <button class="btn btn-primary w-100 mb-4" type="submit">Enviar</button>
                 </div>
             </div>
         </div>
