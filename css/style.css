@@ -187,8 +187,15 @@ body{
 }
 
 .formulario-presupuesto p{
-    color: white;
+    color: #f0c69c;
 }
+
+/*   --- VALIDACION ---   */
+
+.invalid-feedback{
+    color: #f0c69c;
+}
+
 
 /*--- CSS CORRESPONDIENTE A LOGIN.HTML ---*/
 
