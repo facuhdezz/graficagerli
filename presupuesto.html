@@ -134,14 +134,14 @@
                         <hr class="hrForm mb-3">
                         <p>Especifique cantidad de libretas, cada libreta contiene 50 números.</p>
                         <div class="form-floating mb-3">
-                            <input type="number" class="form-control w-100" required placeholder="cantidad">
+                            <input type="number" name="cantidad" class="form-control w-100" required placeholder="cantidad">
                             <label for="floatingInput">Cantidad *</label>
                             <div class="invalid-feedback">
                                 Seleccione una cantidad.
                             </div>
                         </div>
                         <div class="form-floating mb-3">
-                            <select class="form-select" id="floatingSelect">
+                            <select class="form-select" name="tamaño" id="floatingSelect">
                                 <option value="chicas" selected>Chicas: 11 x 17 cm (Más usadas)</option>
                                 <option value="grandes">Grandes: 17 x 22 cm</option>
                                 <option value="otro">Otro</option>
@@ -149,7 +149,7 @@
                             <label for="floatingSelect">Seleccione un tamaño</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <textarea class="form-control w-100" placeholder="Leave a comment here"
+                            <textarea name="datos" class="form-control w-100" placeholder="Leave a comment here"
                                 style="height: 100px"></textarea>
                             <label for="floatingTextarea2">Datos a incorporar</label>
                         </div>
@@ -158,7 +158,7 @@
                             <div class="d-flex mb-2">
                                 <input class="form-control" type="file" id="formFileMultiple" multiple>
                             </div>
-                            <button class="btn btn-primary w-100 mb-4" type="submit">Enviar</button>
+                            <button class="btn btn-primary w-100 mb-4" type="submit" name="trabajo" value="boletas">Enviar</button>
                         </div>
                     </form>
                 </div>

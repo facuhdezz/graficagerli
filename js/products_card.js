@@ -1,12 +1,9 @@
 const url = 'js/products.json';
 
-    console.log('hola')
-    console.log(cards);
     async function f() {
         try {
             let response = await fetch(url);
             let data = await response.json();
-            console.log(data);
             showCards(data);
         } catch (err) {
             console.log(err);

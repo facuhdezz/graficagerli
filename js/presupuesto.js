@@ -19,30 +19,29 @@ btnCollapseOptions.addEventListener('click', () => {
     })
 });
 
-console.log(listGroup);
 function llamador(){   
 
     let htmlToForm = `
     <div class="form-floating mb-3">
-        <input type="text" class="form-control w-100" required placeholder="Nombre">
+        <input type="text" name="nombre" class="form-control w-100" required placeholder="Nombre">
         <label for="floatingInput">Nombre *</label>
         <div class="invalid-feedback">
             Por favor, ingrese un nombre.
         </div>
     </div>
     <div class="form-floating mb-3">
-        <input type="text" class="form-control w-100" required placeholder="Nombre">
+        <input type="text" name="telefono" class="form-control w-100" required placeholder="Teléfono">
         <label for="floatingInput">Teléfono / Celular *</label>
         <div class="invalid-feedback">
             Por favor, ingrese un número de contacto.
         </div>
     </div>
     <div class="form-floating mb-3">
-        <input type="text" class="form-control w-100" placeholder="Nombre">
+        <input type="text" name="empresa" class="form-control w-100" placeholder="Empresa">
         <label for="floatingInput">Empresa</label>
     </div>
     <div class="form-floating mb-3">
-        <input type="email" class="form-control w-100" required placeholder="email">
+        <input type="email" name="email" class="form-control w-100" required placeholder="email">
         <label for="floatingInput">Email *</label>
         <div class="invalid-feedback">
             Por favor, ingrese un email correcto.
