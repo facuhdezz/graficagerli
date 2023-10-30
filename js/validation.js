@@ -1,3 +1,5 @@
+
+/* FUNCION PARA VALIDAR FORMULARIO DE PRESUPUESTO */
 function validation() {
     let forms = document.querySelectorAll('.need-validation');
     console.log(forms);
@@ -10,13 +12,14 @@ function validation() {
                 console.log('invalidado')
             } else {
                 createJson(form);
+                console.log('validado');
             }
-            console.log('validado');
             form.classList.add("was-validated");
         })
     })
 }
 
+/* FUNCION QUE CREA UN OBJETO CON LOS DATOS DEL FORMULARIO DE PRESUPUESTO, SE EJECUTA EN validation() */
 function createJson(form){
     let presupArray = [];
     for (let i=0 ; i < form.length ; i++) {
@@ -34,3 +37,17 @@ function createJson(form){
 }
 
 validation();
+
+
+/* FUNCION QUE TRAE LOS DATOS DEL SERVIDOR */
+async function f() {
+    try {
+        let response = await fetch("http://localhost:3000/trabajos");
+        let trabajos = await response.json();
+        console.log(trabajos);
+    } catch(err) {
+        console.log(err);
+    }
+}
+
+f()
