@@ -29,7 +29,8 @@ function createJson(form){
     }
     const presupObject = Object.fromEntries(presupArray);
     console.log(presupObject);
-    fetch("http://localhost:3000/trabajos", {
+    console.log(presupObject.trabajo);
+    fetch(`http://localhost:3000/${presupObject.trabajo}`, {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify(presupObject),
@@ -42,7 +43,7 @@ validation();
 /* FUNCION QUE TRAE LOS DATOS DEL SERVIDOR */
 async function f() {
     try {
-        let response = await fetch("http://localhost:3000/trabajos");
+        let response = await fetch("http://localhost:3000/boletas");
         let trabajos = await response.json();
         console.log(trabajos);
     } catch(err) {
