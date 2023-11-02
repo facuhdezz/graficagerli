@@ -1,17 +1,17 @@
 
 /* FUNCION PARA VALIDAR FORMULARIO DE PRESUPUESTO */
-function validation() {
-    let forms = document.querySelectorAll('.need-validation');
+function validationPresup() {
+    let forms = document.querySelectorAll('.presup-form');
     console.log(forms);
 
     forms.forEach((form) => {
         form.addEventListener('submit', (event) => {            
-            event.preventDefault()
+            event.preventDefault();
             if (!form.checkValidity()){
                 event.stopPropagation()
                 console.log('invalidado')
             } else {
-                createJson(form);
+                createPresup(form);
                 console.log('validado');
             }
             form.classList.add("was-validated");
@@ -19,8 +19,9 @@ function validation() {
     })
 }
 
+
 /* FUNCION QUE CREA UN OBJETO CON LOS DATOS DEL FORMULARIO DE PRESUPUESTO, SE EJECUTA EN validation() */
-function createJson(form){
+function createPresup(form){
     let presupArray = [];
     for (let i=0 ; i < form.length ; i++) {
         if (form[i].name !== "" && form[i].value !== ""){
@@ -37,7 +38,7 @@ function createJson(form){
     });
 }
 
-validation();
+validationPresup();
 
 
 /* FUNCION QUE TRAE LOS DATOS DEL SERVIDOR */

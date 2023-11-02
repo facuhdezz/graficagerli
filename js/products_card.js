@@ -63,7 +63,7 @@ const url = 'js/products.json';
                 </div>
             </div>
             `
-            id += 1;
+            id++;
         }
         cards.innerHTML = htmlContentToAppend;
     }

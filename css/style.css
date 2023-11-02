@@ -15,8 +15,9 @@ body{
 }
 
 #bodyindex{
-    background-image: url("../img/fondo-index.png");
+    background-image: url("../img/segundo_fondo.png");
     background-size: cover;
+    background-attachment: fixed;
 }
 
 /*--- CSS GENERAL ---*/
@@ -127,7 +128,7 @@ body{
 
 .containerIndex{
     position: relative;
-    top: 35vw;
+    top: 10vw;
     height: 1000px;
     padding-bottom: 50px;
 }
@@ -232,23 +233,25 @@ main{
     width: 65%;
     height: 75%;
     border-radius: 20px;
-    background-color: white;
+    background-color: #301a1a;
     font-family: 'Raleway';
 }
 
 .form-title{
     margin: 40px;
+    color: #f0c69c;
 }
 
-.form input{
-    height: 50px;
-    margin-bottom: 30px;
-    margin-top: 5px;
-}
-
-#form-login{
+#form-login, #form-signup{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin: 40px;
+}
+
+#logo-login{
+    position: relative;
+    width: 30vw;
+    top: 35vh;
+    left: 10vw;
 }
