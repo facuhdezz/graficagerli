@@ -1,33 +1,37 @@
-async function f() {
+let toAppendEmail = document.getElementById('divEmail');
+let toAppendPassword = document.getElementById('divPassword');
+
+async function f(email) {
     try {
-        let response =  await fetch('http://localhost:3000/users/1');
+        let response =  await fetch(`http://localhost:3000/users/${email}`);
         let user = await response.json();
-        console.log(user)
-        validationLogin(user);
+        return user.contraseña;
     } catch(err) {
-        console.log(err)
+        toAppendEmail.textContent = `Por favor, ingrese un email correcto.`;
     }
 }
 
-function validationLogin(user){
-    let formLogin = document.getElementById('form-login')
+function validationLogin(){
+    let formLogin = document.getElementById('form-login');
     let email = document.getElementById('email');
     let password = document.getElementById('password');
     console.log(formLogin);
 
-    formLogin.addEventListener('submit', (event) => {
+    formLogin.addEventListener('submit', async (event) => {
         event.preventDefault();
-        if(!formLogin.checkValidity() || email.value != user.email || password.value != user.contraseña){
+        let passwordFetch = await f(email.value);
+        if(!formLogin.checkValidity() || passwordFetch != password.value){
             event.stopPropagation();
             console.log('invalidado');
+            toAppendPassword.textContent = `Por favor, ingrese una contraseña correcta.`;
         } else {
             console.log('validado');
-            // window.location.href = "index.html";
+            window.location.href = "index.html";
         }
-        formLogin.classList.add("was-validated");
     });
 }
 
 
+validationLogin();
 
-f();
+

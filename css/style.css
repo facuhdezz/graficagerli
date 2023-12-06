@@ -127,10 +127,12 @@ body{
 }
 
 .containerIndex{
-    position: relative;
-    top: 10vw;
-    height: 1000px;
     padding-bottom: 50px;
+}
+
+#index-title h1, #index-title h2{
+    color: white;
+    font-size: 5rem;
 }
 
 .card{
@@ -200,11 +202,6 @@ body{
 
 /*--- CSS CORRESPONDIENTE A LOGIN.HTML ---*/
 
-main{
-    background-image: none;
-    background-color: white;
-}
-
 .ventana{
     display: flex;
     flex-direction: row;
@@ -254,4 +251,9 @@ main{
     width: 30vw;
     top: 35vh;
     left: 10vw;
+}
+
+#divEmail, #divPassword{
+    margin-top: 5px;
+    color: #f0c69c;
 }
