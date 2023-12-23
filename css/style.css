@@ -11,11 +11,7 @@
 
 body{
     margin: 0;
-    background-color: #301a1a;
-}
-
-#bodyindex{
-    background-image: url("../img/segundo_fondo.png");
+    background-image: url("../fondo/fondo.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -23,7 +19,6 @@ body{
 /*--- CSS GENERAL ---*/
 
 .navbar{
-    padding-inline: 200px;
     background-attachment: fixed;
     background-color: #f0c69c;
     border-bottom: #f0c69c;
@@ -31,7 +26,9 @@ body{
 }
 
 .nav-link{
-    margin-left: 20px;
+    color: white;
+    margin-inline: 20px;
+    font-size: 1.25rem;
 }
 
 .nav-link:hover{
@@ -40,30 +37,12 @@ body{
 
 .navbar-img{
     width: 150px;
-    margin-right: 20px;
-}
-
-.icon_navbar{
-    float: inline-start;
+    margin-inline: 20px;
 }
 
 #account{
     font-size: 2.2rem;
     margin-right: 5px;
-}
-
-.align_icons{
-    display: flex;
-    align-items: center;
-}
-
-.form-inline{
-    display: flex;
-    align-items: center;
-}
-
-.form-control-navbar{
-    width: 30vw;
 }
 /* 
 @media (max-width: 1750px) {
@@ -129,8 +108,14 @@ body{
 .containerIndex{
     position: relative;
     top: 10vw;
-    height: 1000px;
     padding-bottom: 50px;
+}
+
+.logo25 {
+    position: absolute;
+    top: 200px;
+    left: 320px;
+    width: 480px;
 }
 
 .card{

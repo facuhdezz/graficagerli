@@ -17,78 +17,10 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <img src="img/logo_nav2.png" class="navbar-img">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto align_icons">
-                    <form class="form-inline">
-                        <input class="form-control form-control-navbar mr-sm-2" type="search" placeholder="Buscar"
-                            aria-label="Search">
-                        <a href="#" class="nav-search">
-                            <span class="material-symbols-outlined">
-                                search
-                            </span>
-                        </a>
-                    </form>
-                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-                    <a class="nav-link active" aria-current="page" href="#">Presupuesto</a>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle align_icons" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <span class="material-symbols-outlined icon_navbar" id="account">
-                                account_circle
-                            </span>
-                            <span class="nombreUsuario">Facundo Hernández</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Mis compras</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link align_icons" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <span class="material-symbols-outlined icon_navbar" id="notification">
-                                mail
-                            </span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link align_icons" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <span class="material-symbols-outlined icon_navbar" id="notification">
-                                notifications
-                            </span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </div>
-            </div>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-center align-items-center">
+      <img src="img/logo_nav2.png" class="navbar-img">
+      <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+      <a class="nav-link" aria-current="page" href="presupuesto.html">Presupuesto</a>
     </nav>
     <div class="container mt-5">
         <div class="row">
@@ -131,7 +63,7 @@
                 <div id="btnBoletasdiv">
                     <form class="need-validation presup-form" id="" action="#" novalidate>
                         <div class="toAppendForm"></div>
-                        <hr class="hrForm mb-3">
+                        <!-- <hr class="hrForm mb-3"> -->
                         <p>Especifique cantidad de libretas, cada libreta contiene 50 números.</p>
                         <div class="form-floating mb-3">
                             <input type="number" name="cantidad" class="form-control w-100" required placeholder="cantidad">
@@ -168,7 +100,7 @@
                 <div id="btnTarjetasdiv" class="d-none">
                     <form class="need-validation presup-form" id="" action="#" novalidate>
                         <div class="toAppendForm"></div>
-                        <hr class="hrForm mb-3">
+                        <!-- <hr class="hrForm mb-3"> -->
                         <p>Especifique cantidad de tarjetas.</p>
                         <div class="form-floating mb-3">
                             <input type="number" class="form-control w-100" required placeholder="cantidad">
@@ -221,7 +153,7 @@
                 <div id="btnVolantesdiv" class="d-none">
                     <form class="need-validation presup-form" id="" action="#" novalidate>
                         <div class="toAppendForm"></div>
-                        <hr class="hrForm mb-3">
+                        <!-- <hr class="hrForm mb-3"> -->
                         <p>Especifique cantidad de volantes.</p>
                         <div class="form-floating mb-3">
                             <input type="number" class="form-control w-100" required placeholder="cantidad">
@@ -288,7 +220,7 @@
                 <div id="btnAdhesivosdiv" class="d-none">
                     <form class="need-validation presup-form" id="" action="#" novalidate>
                         <div class="toAppendForm"></div>
-                        <hr class="hrForm mb-3">
+                        <!-- <hr class="hrForm mb-3"> -->
                         <p>Especifique cantidad de adhesivos.</p>
                         <div class="form-floating mb-3">
                             <input type="number" class="form-control w-100" required placeholder="cantidad">
@@ -331,7 +263,7 @@
                 <div id="btnImpresionesdiv" class="d-none">
                     <form class="need-validation presup-form" id="" action="#" novalidate>
                         <div class="toAppendForm"></div>
-                        <hr class="hrForm mb-3">
+                        <!-- <hr class="hrForm mb-3"> -->
                         <p>Especifique cantidad de impresiones.</p>
                         <div class="form-floating mb-3">
                             <input type="number" class="form-control w-100" required placeholder="cantidad">
@@ -405,7 +337,7 @@
                 <div id="btnOtrosdiv" class="d-none">
                     <form class="need-validation presup-form" id="" action="#" novalidate>
                         <div class="toAppendForm"></div>
-                        <hr class="hrForm mb-3">
+                        <!-- <hr class="hrForm mb-3"> -->
                         <p>Especifique cantidad.</p>
                         <div class="form-floating mb-3">
                             <input type="number" class="form-control w-100" required placeholder="cantidad">
